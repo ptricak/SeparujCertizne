@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\images\aktuality\" />
+    <Content Remove="wwwroot\DataFiles\" />
+    <Content Remove="wwwroot\assets\images\resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\assets\images\aktuality\" />
+    <Folder Include="wwwroot\DataFiles\" />
+    <Folder Include="Mappers\" />
+    <Folder Include="wwwroot\assets\images\resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="TinyCsvParser" />
+    <None Remove="Mappers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="TinyCsvParser" Version="2.6.1" />
+  </ItemGroup>
+</Project>

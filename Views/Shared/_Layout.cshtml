@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Separuj, Čertižné!</title>
+    <meta name="author" content="Peter Tričák">
+    <meta name="keywords" content="obec Čertižné, separacia odpadu, recyklovanie, vyvoz odpadu" />
+    <meta name="description" content="SeparujCerizne - stranka venovana separacii odpadu v obci Certizne" />
+    <link rel="icon" type="image/png" href="https://certizne.eu/userfiles/image/favicon.png" />
+
+    <!-- plugins Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="~/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="~/css/wastey-icons.css">
+    <link rel="stylesheet" href="~/css/animate.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+
+    <!-- template Styles -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+
+    <!-- custom Styles -->
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BX7NMM58Z"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3BX7NMM58Z');</script>
+</head>
+<body>
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div><!-- /.preloader -->
+
+    <header class="header-one stricky">
+        <div class="container">
+            <div class="header-one__logo">
+                <a href="index.html">
+                    <img src="~/assets/images/logo-1-1.png" alt="">
+                </a>
+                <span class="side-menu__toggler fa fa-bars"></span>
+            </div><!-- /.header-one__logo -->
+            <nav class="header-one__menu main-nav__main-navigation">
+                <ul class="header-one__menu-list main-nav__navigation-box">
+                    <li>
+                        @Html.ActionLink("Domov", "Index", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Kontakty", "Contacts", "Home")
+                    </li><!-- /.dropdown -->
+                </ul><!-- /.header-one__menu-list -->
+            </nav><!-- /.header-one__menu -->
+        </div><!-- /.container -->
+    </header><!-- /.header-one -->
+
+    <div class="">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <div class="side-menu__block">
+
+        <a href="#" class="side-menu__toggler side-menu__close-btn">
+            <i class="fa fa-times"></i>
+            <!-- /.fa fa-close -->
+        </a>
+
+        <div class="side-menu__block-overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div><!-- /.side-menu__block-overlay -->
+        <div class="side-menu__block-inner ">
+
+            <a href="index.html" class="side-menu__logo"><img src="assets/images/logo-1-1.png" alt=""></a>
+            <nav class="mobile-nav__container">
+                <!-- content is loading via js -->
+            </nav>
+            <p class="side-menu__block__copy">(c) @DateTime.Now.Year - Obec Čertižné</p>
+        </div><!-- /.side-menu__block-inner -->
+    </div><!-- /.side-menu__block -->
+
+    <footer>
+        <div class="container">
+            <p>Copyright © @DateTime.Now.Year - Ing. Peter Tričák - Obec Čertižné</p>
+        </div>
+    </footer>
+
+
+    <!-- plugins Scripts -->
+    <script src="~/js/jquery-3.5.1.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/bootstrap-select.min.js"></script>
+    <script src="~/js/TweenMax.min.js"></script>
+    <script src="~/js/wow.min.js"></script>
+    <script src="~/js/jquery.ajaxchimp.min.js"></script>
+    <script src="~/js/jquery.validate.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/appear.js"></script>
+    <script src="~/js/jquery.countTo.js"></script>
+    <script src="~/js/theme.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

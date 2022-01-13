@@ -1,0 +1,15 @@
+﻿footer {
+    background-color: #69BE94;
+    bottom: 0;
+    width: 100%;
+    color: #FFF;
+    font-family: "Yantramanav", sans-serif;
+    padding-top: 15px;
+    font-size: 18px;
+    z-index: 999999;
+    padding-bottom: 1px;
+}
+
+.separation-item-description {
+    margin-bottom: 20px;
+}
