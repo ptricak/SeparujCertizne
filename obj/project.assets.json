@@ -85,7 +85,7 @@
       "outputPath": "/Users/Peter/Projects/SeparujCertizne/SeparujCertizne/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/Peter/.config/NuGet/NuGet.Config"
+        "/Users/Peter/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
